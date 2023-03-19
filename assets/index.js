@@ -1,18 +1,18 @@
 
 
-const searchInp = document.querySelector(".weather-search");
-const city = document.querySelector(".weather-city");
-const currentDay = document.querySelector(".weather-day");
-const humidity = document.querySelector(".weather-indicator-humidity>.value");
-const wind = document.querySelector(".weather-indicator-wind>.value");
-const tempHigh = document.querySelector(".weather-indicator-temp-high>.value");
-const tempLow = document.querySelector(".weather-indicator-temp-low>.value");
-const image = document.querySelector(".weather-image");
-const temp = document.querySelector(".weather-temp>.value");
+const searchInp = document.querySelector(".search-bar");
+const city = document.querySelector(".city");
+const currentDay = document.querySelector(".current-day");
+const humidity = document.querySelector(".humidity>.value");
+const wind = document.querySelector(".wind>.value");
+const tempHigh = document.querySelector(".temp-high>.value");
+const tempLow = document.querySelector(".temp-low>.value");
+const image = document.querySelector(".image");
+const temp = document.querySelector(".temp>.value");
 const weatherAPIKey = "2e4914512e314cd0b4ee221b3961702a";
 const weatherBaseEndpoint = `https://api.openweathermap.org/data/2.5/weather?units=imperial&appid=${weatherAPIKey}`;
 const weatherForecastEndpoint = `https://api.openweathermap.org/data/2.5/forecast?units=imperial&appid=${weatherAPIKey}`;
-const forecastSection = document.querySelector(".weather-forecast");
+const forecastSection = document.querySelector(".forecast");
 const searchHistory = document.querySelector(".search-history");
 
 const getWeatherByCityName = async (city) => {
@@ -185,7 +185,7 @@ const updateForecast = (data) => {
   for (let i = 0; i < data.list.length; i += 8) {
     let forecast = data.list[i];
     let forecastElement = document.createElement("div");
-    forecastElement.classList.add("weather-forecast-item");
+    forecastElement.classList.add("forecast-item");
 
     let forecastDate = new Date(forecast.dt * 1000).toLocaleDateString(
       "en-EN",
@@ -201,7 +201,7 @@ const updateForecast = (data) => {
 
     forecastElement.innerHTML = `
         <div class="weather-forecast-date">${forecastDate}</div>
-        <img src="${forecastIcon}" alt="${forecast.weather[0].description}" class="weather-forecast-icon">
+        <img src="${forecastIcon}" alt="${forecast.weather[0].description}" class="icon">
         <div class="weather-forecast-temp">${forecastTemp}&#176;</div>
         <div class="weather-forecast-h
         -humidity">Humidity: ${forecastHumidity}%</div>

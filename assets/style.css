@@ -32,8 +32,8 @@ body {
   }
   
 
-/* adds style for items with the class .weather-search  */
-.weather-search {
+/* adds style for items with the class .search-bar  */
+.search-bar {
   width: 100%;
   padding: 1.5rem 1rem;
   border: none;
@@ -43,8 +43,8 @@ body {
   margin-bottom: 1.0rem;
 }
 
-/* adds style for items with the class .weather-search and the placeholder inside of that   */
-.weather-search::placeholder {
+/* adds style for items with the class .search-bar and the placeholder inside of that   */
+.search-bar::placeholder {
   color: #fff;
 }
 
@@ -56,14 +56,14 @@ body {
   margin-bottom: 4rem;
 }
 
-/* adds style for items with the class .weather-image  */
-.weather-image {
+/* adds style for items with the class .image  */
+.image {
   width: 30vmin;
   align-self: center;
 }
 
-/* adds style for items with the class .weather-city  */
-.weather-city {
+/* adds style for items with the class .city  */
+.city {
   font-size: 2.5rem;
   font-weight: 600;
   margin: 1rem 0;
@@ -73,15 +73,15 @@ body {
     margin-top: 4rem;
 }
 
-/* adds style for items with the class .weather-day  */
-.weather-day {
+/* adds style for items with the class .current-day  */
+.current-day {
   font-size: 2rem;
   margin: 1rem 0;
   font-weight: 400;
 }
 
 /* styling applies to all the items with the class weather indicator and then individual styling can be applied after that*/
-.weather-indicator::before {
+.indicator::before {
     content: '';
     display: inline-block;
     vertical-align: middle;
@@ -97,13 +97,13 @@ body {
   }
   
 
-/* adds style for items with the class .weather-temp  */
-.weather-temp {
+/* adds style for items with the class .temp  */
+.temp {
     font-size: 5.0rem;
 }
 
-/* adds style for items with the class .weather-forecast  */
-.weather-forecast {
+/* adds style for items with the class .forecast  */
+.forecast {
     width: 100%;
     text-align: center;
     display: flex;
@@ -111,11 +111,11 @@ body {
     justify-content: space-between;
 }
 
-.weather-forecast-icon {
+.icon {
     max-width: 50%;
 }
 
-.weather-forecast-item {
+.forecast-item {
 background-color: rgba(255, 255, 255, 0.2);
 border-radius: 1.0rem;
 margin: 0 1.0rem 1.0rem;

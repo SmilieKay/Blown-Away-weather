@@ -97,18 +97,6 @@ body {
   }
   
 
-/* .weather-indicator-humidity::before {
-    background-image: url(../images/humidity.png);
-} */
-
-/* .weather-indicator-wind::before {
-    background-image: url(../images/windmill.png);
-}
-
-.weather-indicator-pressure::before {
-    background-image: url(../images/barometer.png);
-} */
-
 /* adds style for items with the class .weather-temp  */
 .weather-temp {
     font-size: 5.0rem;

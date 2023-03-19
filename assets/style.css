@@ -18,7 +18,7 @@ body {
 
 /* adds style for items with the class .weather  */
 .weather {
-  width: 80%;
+  width: 85%;
   height: 100%;
   font-size: 1.4rem;
   margin: 0 auto;
@@ -26,6 +26,11 @@ body {
   box-sizing: border-box;
   white-space: nowrap;
 }
+
+.error-message {
+    color: red;
+  }
+  
 
 /* adds style for items with the class .weather-search  */
 .weather-search {
@@ -35,7 +40,7 @@ body {
   background-color: rgba(255, 255, 255, 0.15);
   font-size: 1.2rem;
   color: inherit;
-  margin-bottom: 2.0rem;
+  margin-bottom: 1.0rem;
 }
 
 /* adds style for items with the class .weather-search and the placeholder inside of that   */
@@ -48,6 +53,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 4rem;
 }
 
 /* adds style for items with the class .weather-image  */
@@ -60,7 +66,11 @@ body {
 .weather-city {
   font-size: 2.5rem;
   font-weight: 600;
-  margin: 2rem 0;
+  margin: 1rem 0;
+}
+
+.weather-current {
+    margin-top: 4rem;
 }
 
 /* adds style for items with the class .weather-day  */
@@ -81,17 +91,23 @@ body {
     margin-right: 0.5rem;
 }
 
-.weather-indicator-humidity::before {
-    background-image: url(../images/humidity.png);
-}
+.search-item:hover {
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+  }
+  
 
-.weather-indicator-wind::before {
+/* .weather-indicator-humidity::before {
+    background-image: url(../images/humidity.png);
+} */
+
+/* .weather-indicator-wind::before {
     background-image: url(../images/windmill.png);
 }
 
 .weather-indicator-pressure::before {
     background-image: url(../images/barometer.png);
-}
+} */
 
 /* adds style for items with the class .weather-temp  */
 .weather-temp {
